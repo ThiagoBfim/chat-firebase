@@ -2,7 +2,7 @@
 
 Projeto com Flutter para criação de um app de chat online.
 
-* Chat Online utilizando o Realtime Database do Firebase.
+* Chat Online utilizando o [Realtime Database do Firebase](https://firebase.google.com/products/realtime-database).
 
 ## Inicializar o projeto
 
