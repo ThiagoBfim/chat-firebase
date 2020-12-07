@@ -15,6 +15,12 @@ class _ChatPageState extends ModularState<ChatPage, ChatController> {
   //use 'controller' variable to access controller
 
   @override
+  void initState() {
+    super.initState();
+    controller.initialize();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -65,9 +71,9 @@ class _ChatPageState extends ModularState<ChatPage, ChatController> {
       child: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
+          colors: <Color>[Colors.blue[100], Colors.blue[200]],
           begin: Alignment.topCenter,
           end: Alignment.bottomRight,
-          colors: <Color>[Colors.blue[100], Colors.blue[200]],
         )),
         child: Observer(
           builder: (_) => ListView.builder(
